@@ -1,0 +1,6 @@
+{
+  "name": "NKJV Bible",
+  "description": "Bilingual English and Kiswahili Bible with parallel reading, Jesus' words highlighted in green, study notes, Christian verse graphics & Reels studio, audio read-aloud, and offline access.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
