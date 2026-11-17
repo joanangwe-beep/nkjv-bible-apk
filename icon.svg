@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient: Rich Royal Blue & Deep Navy -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Golden Cross Gradient -->
+    <linearGradient id="goldCross" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="25%" stop-color="#fef08a" />
+      <stop offset="60%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- Subtle Divine Glow -->
+    <radialGradient id="divineGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Bible Pages Gradient -->
+    <linearGradient id="pageLeft" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="20%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <linearGradient id="pageRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="20%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Bible Cover Accent -->
+    <linearGradient id="leatherCover" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="50%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+
+    <!-- Ribbon Marker Gold -->
+    <linearGradient id="ribbonGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- App Icon Base Background -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)" />
+
+  <!-- Outer Golden Border Ring -->
+  <rect x="12" y="12" width="488" height="488" rx="98" fill="none" stroke="#d97706" stroke-opacity="0.3" stroke-width="3" />
+
+  <!-- Divine Glow in center/top -->
+  <circle cx="256" cy="210" r="190" fill="url(#divineGlow)" />
+
+  <!-- Light Rays subtle effect -->
+  <g opacity="0.3" stroke="#fef08a" stroke-width="2" stroke-linecap="round">
+    <line x1="256" y1="90" x2="256" y2="40" />
+    <line x1="210" y1="110" x2="175" y2="70" />
+    <line x1="302" y1="110" x2="337" y2="70" />
+    <line x1="165" y1="150" x2="120" y2="130" />
+    <line x1="347" y1="150" x2="392" y2="130" />
+  </g>
+
+  <!-- Glowing Golden Cross Rising from Bible -->
+  <g filter="url(#softGlow)">
+    <!-- Vertical Cross Beam -->
+    <rect x="242" y="70" width="28" height="180" rx="6" fill="url(#goldCross)" />
+    <!-- Horizontal Cross Beam -->
+    <rect x="196" y="116" width="120" height="26" rx="6" fill="url(#goldCross)" />
+    <!-- Center Jewel highlight -->
+    <circle cx="256" cy="129" r="6" fill="#ffffff" opacity="0.9" />
+  </g>
+
+  <!-- Open Bible Graphic -->
+  <!-- Outer Bible Cover Foundation -->
+  <path d="M 80 348 C 140 360, 220 354, 256 368 C 292 354, 372 360, 432 348 C 432 366, 372 378, 256 386 C 140 378, 80 366, 80 348 Z" fill="url(#leatherCover)" />
+
+  <!-- Open Bible Pages (Left Book Side) -->
+  <path d="M 90 326 C 150 338, 225 330, 254 346 L 254 260 C 225 244, 150 252, 90 240 Z" fill="url(#pageLeft)" stroke="#94a3b8" stroke-width="1.5" />
+  
+  <!-- Subtle text lines left page -->
+  <g stroke="#94a3b8" stroke-width="2" opacity="0.55" stroke-linecap="round">
+    <line x1="120" y1="262" x2="225" y2="272" />
+    <line x1="120" y1="278" x2="225" y2="288" />
+    <line x1="120" y1="294" x2="225" y2="304" />
+    <line x1="120" y1="310" x2="200" y2="320" />
+  </g>
+
+  <!-- Open Bible Pages (Right Book Side) -->
+  <path d="M 422 326 C 362 338, 287 330, 258 346 L 258 260 C 287 244, 362 252, 422 240 Z" fill="url(#pageRight)" stroke="#94a3b8" stroke-width="1.5" />
+
+  <!-- Subtle text lines right page (John 3:16 allusion with subtle green text highlight on Jesus words) -->
+  <g stroke="#94a3b8" stroke-width="2" opacity="0.55" stroke-linecap="round">
+    <line x1="287" y1="272" x2="392" y2="262" />
+    <!-- Jesus words green subtle line in scripture -->
+    <line x1="287" y1="288" x2="392" y2="278" stroke="#16a34a" stroke-width="2.5" opacity="0.9" />
+    <line x1="287" y1="304" x2="392" y2="294" stroke="#16a34a" stroke-width="2.5" opacity="0.9" />
+    <line x1="287" y1="320" x2="360" y2="310" stroke="#16a34a" stroke-width="2.5" opacity="0.9" />
+  </g>
+
+  <!-- Golden Bookmark Ribbon Falling Down -->
+  <path d="M 252 344 L 252 400 L 256 392 L 260 400 L 260 344 Z" fill="url(#ribbonGold)" />
+
+  <!-- NKJV Distinctive Lettering in Gold & White -->
+  <text x="256" y="442" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-weight="800" font-size="44" fill="#ffffff" letter-spacing="4">
+    NKJV
+  </text>
+  <text x="256" y="474" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="16" fill="#fbbf24" letter-spacing="5">
+    HOLY BIBLE
+  </text>
+</svg>
